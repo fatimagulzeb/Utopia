@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript to LinkedIn & Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transcript to LinkedIn & Email</h1>
+    <p>Upload a transcript to generate a LinkedIn post and send a follow-up email.</p>
+
+    <form method="POST" action="/generate_and_send" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="transcript">Upload Transcript (TXT file):</label>
+            <input type="file" id="transcript" name="transcript" accept=".txt" required>
+        </div>
+
+        <div class="form-group">
+            <label for="attendee_email">Attendee Email:</label>
+            <input type="email" id="attendee_email" name="attendee_email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="your_name">Your Name:</label>
+            <input type="text" id="your_name" name="your_name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="your_role">Your Role:</label>
+            <input type="text" id="your_role" name="your_role" required>
+        </div>
+
+        <button type="submit">Generate & Send</button>
+    </form>
+
+    {% if linkedin_post %}
+        <div class="result">
+            <h2>Generated LinkedIn Post</h2>
+            <p>{{ linkedin_post | safe }}</p>
+
+            {% if press_angle %}
+                <h2>Press Angle</h2>
+                <p>{{ press_angle }}</p>
+            {% endif %}
+
+            {% if email_sent %}
+                <p class="success">
+                    ✅ Email successfully sent to <strong>{{ attendee_email }}</strong>!
+                </p>
+            {% else %}
+                <p class="error">
+                    ❌ Failed to send email to <strong>{{ attendee_email }}</strong>.
+                </p>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

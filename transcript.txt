@@ -1,0 +1,49 @@
+Omar 00:00: Hey Maya, thanks for joining. I wanted to discuss the AI assistant launch timeline and the feedback we’ve been receiving from early users.
+
+Maya 00:11: Of course. I reviewed the reports this morning. Overall, the response has been positive, especially from small business owners.
+
+Omar 00:20: That’s good to hear. What are users liking the most?
+
+Maya 00:25: Mainly the automation features. They love how the AI handles repetitive customer questions instantly. A few users said it reduced their support workload significantly.
+
+Omar 00:38: That’s exactly the outcome we were aiming for. Any major complaints?
+
+Maya 00:43: Yes, a couple. Some users mentioned the AI occasionally gives responses that sound too robotic. Others want better personalization.
+
+Omar 00:54: Personalization makes sense. We probably need stronger memory and context handling.
+
+Maya 01:00: Agreed. Also, several customers requested WhatsApp integration because that’s where most of their communication happens.
+
+Omar 01:10: That should definitely become a priority. Did anyone mention pricing concerns?
+
+Maya 01:16: A few startups said the premium plan feels expensive for smaller teams. They suggested a lighter starter package.
+
+Omar 01:26: That’s actually a good idea. Lower pricing could help us increase adoption early on.
+
+Maya 01:33: Exactly. Once businesses rely on the platform, upgrading becomes easier later.
+
+Omar 01:41: What about onboarding? Are users understanding how to use the AI effectively?
+
+Maya 01:48: Not always. Some people expect perfect results immediately without giving enough instructions. We may need interactive tutorials or prompt suggestions.
+
+Omar 02:01: Makes sense. AI products still require some user education.
+
+Maya 02:06: Definitely. Another thing — customers seem more interested in business outcomes than the AI itself.
+
+Omar 02:15: Meaning?
+
+Maya 02:17: Instead of marketing “advanced AI technology,” we should focus on saving time, reducing costs, and improving customer response speed.
+
+Omar 02:29: I completely agree. Businesses care about results, not technical terminology.
+
+Maya 02:36: Exactly. Simpler messaging will probably perform better in marketing campaigns too.
+
+Omar 02:44: Alright. Let’s prioritize three things this month: WhatsApp integration, onboarding improvements, and more personalized responses.
+
+Maya 02:56: Sounds good. I’ll prepare a roadmap update and coordinate with the product team.
+
+Omar 03:02: Perfect. Thanks, Maya. I think we’re moving in the right direction.
+
+Maya 03:07: I think so too. Excited to see the next version launch.
+
+Meeting Ended – 03:12
